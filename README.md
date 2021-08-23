@@ -11,13 +11,13 @@
 ###### 使用说明：
 ![615d4334b6ef7d1d5613b7ee05e24620](D3973F7D-C5B6-488E-8DA3-750CF80C842C.png)
 
-web-terminal
+- web-terminal:
  web输入命令端
-MQTT-Client
+- MQTT-Client:
  Web客户端后台，监听发布订阅消息，编码命令并推送组装的内容。
-MQTT-Center
+- MQTT-Center:
  MQTT 中介端，如：环信
-MQTT-Server
+- MQTT-Server:
  MQTT 服务端，接受包含命令的消息，解析命令，SSH方式连接服务器并执行命令。执行完毕发送通知。
  
  
