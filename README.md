@@ -22,13 +22,13 @@
  
  
   ####### web端输入命令
- ![cmd1](resource/cmd1.png)
+ ![cmd1](resources/cmd1.png)
   
   ####### 服务器端接收到命令
- ![mqtt-server-top1](resource/mqtt-server-top1.png)
+ ![mqtt-server-top1](resources/mqtt-server-top1.png)
 
    ####### 服务器端执行命令并返回结果
- ![cmd_server](resource/cmd_server.png)
+ ![cmd_server](resources/cmd_server.png)
  
  ##### 引用
  [xterm.js](https://github.com/xtermjs/xterm.js)
