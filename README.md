@@ -20,14 +20,13 @@
 - MQTT-Server:
  MQTT 服务端，接受包含命令的消息，解析命令，SSH方式连接服务器并执行命令。执行完毕发送通知。
  
- 
-  ####### web端输入命令
+###### web端输入命令
  ![cmd1](resources/cmd1.png)
-  
-  ####### 服务器端接收到命令
+ 
+###### 服务器端接收到命令
  ![mqtt-server-top1](resources/mqtt-server-top1.png)
 
-   ####### 服务器端执行命令并返回结果
+ ###### 服务器端执行命令并返回结果
  ![cmd_server](resources/cmd_server.png)
  
  ##### 引用
