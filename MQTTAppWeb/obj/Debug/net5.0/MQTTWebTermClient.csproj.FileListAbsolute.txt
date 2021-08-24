@@ -1,0 +1,1 @@
+D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTWebTermClient\obj\Debug\net5.0\MQTTWebTermClient.csproj.AssemblyReference.cache

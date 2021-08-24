@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31220.234
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTnet.App", "MQTTnet.App\MQTTnet.App.csproj", "{65E9EF79-0D40-4236-9E55-B56A774E1717}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTServer", "MQTTServer\MQTTServer.csproj", "{330A98E1-ADE0-4FC5-8608-3DC584203444}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTAppWeb", "MQTTAppWeb\MQTTAppWeb.csproj", "{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{65E9EF79-0D40-4236-9E55-B56A774E1717}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65E9EF79-0D40-4236-9E55-B56A774E1717}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65E9EF79-0D40-4236-9E55-B56A774E1717}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65E9EF79-0D40-4236-9E55-B56A774E1717}.Release|Any CPU.Build.0 = Release|Any CPU
+		{330A98E1-ADE0-4FC5-8608-3DC584203444}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{330A98E1-ADE0-4FC5-8608-3DC584203444}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{330A98E1-ADE0-4FC5-8608-3DC584203444}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{330A98E1-ADE0-4FC5-8608-3DC584203444}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {399FF1E4-86ED-415A-A7CE-0C63B3C569E3}
+	EndGlobalSection
+EndGlobal

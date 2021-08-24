@@ -1,0 +1,1 @@
+{"version":3,"file":"CoreBrowserService.d.ts","sourceRoot":"","sources":["../../../src/browser/services/CoreBrowserService.ts"],"names":[],"mappings":"AAKA,OAAO,EAAE,mBAAmB,EAAE,MAAM,YAAY,CAAC;AAEjD,qBAAa,kBAAmB,YAAW,mBAAmB;IAI1D,OAAO,CAAC,SAAS;IAHZ,YAAY,EAAE,SAAS,CAAC;gBAGrB,SAAS,EAAE,mBAAmB;IAIxC,IAAW,SAAS,IAAI,OAAO,CAG9B;CACF"}

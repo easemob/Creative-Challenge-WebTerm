@@ -1,0 +1,1 @@
+{"version":3,"file":"Dom.js","sourceRoot":"","sources":["../../src/browser/Dom.ts"],"names":[],"mappings":";;;AAKA,SAAgB,uBAAuB;;IAAC,kBAAwC;SAAxC,UAAwC,EAAxC,qBAAwC,EAAxC,IAAwC;QAAxC,6BAAwC;;IAC9E,KAAgB,UAAQ,EAAR,qBAAQ,EAAR,sBAAQ,EAAR,IAAQ,EAAE;QAArB,IAAM,CAAC,iBAAA;QACV,MAAA,CAAC,aAAD,CAAC,uBAAD,CAAC,CAAE,aAAa,0CAAE,WAAW,CAAC,CAAC,EAAE;KAClC;AACH,CAAC;AAJD,0DAIC"}
