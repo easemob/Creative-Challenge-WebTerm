@@ -4323,11 +4323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj",
+      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj",
       "projectName": "MQTTnet.App",
-      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj",
+      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj",
       "packagesPath": "C:\\Users\\synyi\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\obj\\",
+      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

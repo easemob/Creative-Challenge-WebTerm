@@ -4374,11 +4374,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\MQTTAppWeb.csproj",
+      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\MQTTAppWeb.csproj",
       "projectName": "MQTTWebTermClient",
-      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\MQTTAppWeb.csproj",
+      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\MQTTAppWeb.csproj",
       "packagesPath": "C:\\Users\\synyi\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\obj\\",
+      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4399,8 +4399,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj": {
-              "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj"
+            "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj": {
+              "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj"
             }
           }
         }

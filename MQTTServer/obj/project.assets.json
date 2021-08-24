@@ -140,11 +140,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTServer\\MQTTServer.csproj",
+      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTServer\\MQTTServer.csproj",
       "projectName": "MQTTServer",
-      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTServer\\MQTTServer.csproj",
+      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTServer\\MQTTServer.csproj",
       "packagesPath": "C:\\Users\\synyi\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTServer\\obj\\",
+      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
