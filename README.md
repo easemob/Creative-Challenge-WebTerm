@@ -22,8 +22,8 @@
 - MQTT-Server:
  MQTT 服务端，接受包含命令的消息，解析命令，SSH方式连接服务器并执行命令。执行完毕发送通知。需配置MQTT连接配置和SSH连接。
 ##### MQTTnet.App
-- MQTT-Client2:
- 负责MQTT连接调试，也可以作为桌面端命令发送客服端
+- Common:
+ 公共组件，负责MQTT连接调试，也可以作为桌面端命令发送客服端
  
 ###### web端输入命令
  ![cmd1](resources/cmd1.png)
