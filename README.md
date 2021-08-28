@@ -11,9 +11,9 @@
 ###### 使用说明：
 ![615d4334b6ef7d1d5613b7ee05e24620](resources/D3973F7D-C5B6-488E-8DA3-750CF80C842C.png)
 
-##### MQTTAppWeb
+##### MQTTWebTermClient
 - web-terminal:
- web输入命令端，需配置websocket连接。
+ web输入命令端。
 - MQTT-Client:
  Web客户端后台，监听发布订阅消息，编码命令并推送组装的内容。需要在appsettings.Development.json 配置MQTT连接配置。
 - MQTT-Center:
@@ -33,6 +33,10 @@
 
  ###### 服务器端执行命令并返回结果
  ![cmd_server](resources/cmd_server.png)
+ 
+ ##### 如输入linux命令 ls 查看服务器目录
+ ![mqtt-server-top1](resources/cmd-con.png)
+ 
  
  ##### 引用
    [xterm.js](https://github.com/xtermjs/xterm.js)
