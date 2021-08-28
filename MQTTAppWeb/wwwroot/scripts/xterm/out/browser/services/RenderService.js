@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -61,7 +63,7 @@ var RenderService = (function (_super) {
         _this.register(optionsService.onOptionChange(function () { return _this._renderer.onOptionsChanged(); }));
         _this.register(_this._charSizeService.onCharSizeChange(function () { return _this.onCharSizeChanged(); }));
         _this._renderer.onRequestRedraw(function (e) { return _this.refreshRows(e.start, e.end, true); });
-        _this.register(Lifecycle_2.addDisposableDomListener(window, 'resize', function () { return _this.onDevicePixelRatioChange(); }));
+        _this.register((0, Lifecycle_2.addDisposableDomListener)(window, 'resize', function () { return _this.onDevicePixelRatioChange(); }));
         if ('IntersectionObserver' in window) {
             var observer_1 = new IntersectionObserver(function (e) { return _this._onIntersectionChange(e[e.length - 1]); }, { threshold: 0 });
             observer_1.observe(screenElement);

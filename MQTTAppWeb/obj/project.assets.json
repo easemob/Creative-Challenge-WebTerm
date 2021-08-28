@@ -576,6 +576,13 @@
           "lib/netstandard1.0/_._": {}
         }
       },
+      "Microsoft.TypeScript.MSBuild/4.4.2": {
+        "type": "package",
+        "build": {
+          "build/Microsoft.TypeScript.MSBuild.props": {},
+          "build/Microsoft.TypeScript.MSBuild.targets": {}
+        }
+      },
       "Microsoft.Win32.SystemEvents/4.5.0": {
         "type": "package",
         "dependencies": {
@@ -1948,6 +1955,116 @@
         "microsoft.netcore.targets.1.1.0.nupkg.sha512",
         "microsoft.netcore.targets.nuspec",
         "runtime.json"
+      ]
+    },
+    "Microsoft.TypeScript.MSBuild/4.4.2": {
+      "sha512": "n/yIf3x4GBAGS3c6i8Jaen0aGTteI4ym7PskmQ/Aex4J/kYEdhwAhF707NSIeCYa+hBGqjYBaevSw4FzD+ZrPg==",
+      "type": "package",
+      "path": "microsoft.typescript.msbuild/4.4.2",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "License.txt",
+        "build/Microsoft.TypeScript.MSBuild.props",
+        "build/Microsoft.TypeScript.MSBuild.targets",
+        "microsoft.typescript.msbuild.4.4.2.nupkg.sha512",
+        "microsoft.typescript.msbuild.nuspec",
+        "tools/Microsoft.TypeScript.Default.props",
+        "tools/Microsoft.TypeScript.targets",
+        "tools/net45/System.IO.FileSystem.Primitives.dll",
+        "tools/net45/System.IO.FileSystem.dll",
+        "tools/net45/TypeScript.Tasks.dll",
+        "tools/netstandard1.3/TypeScript.Tasks.dll",
+        "tools/tsc/cancellationToken.js",
+        "tools/tsc/cs/diagnosticMessages.generated.json",
+        "tools/tsc/de/diagnosticMessages.generated.json",
+        "tools/tsc/en/diagnosticMessages.generated.json",
+        "tools/tsc/es/diagnosticMessages.generated.json",
+        "tools/tsc/fr/diagnosticMessages.generated.json",
+        "tools/tsc/it/diagnosticMessages.generated.json",
+        "tools/tsc/ja/diagnosticMessages.generated.json",
+        "tools/tsc/ko/diagnosticMessages.generated.json",
+        "tools/tsc/lib.d.ts",
+        "tools/tsc/lib.dom.d.ts",
+        "tools/tsc/lib.dom.iterable.d.ts",
+        "tools/tsc/lib.es2015.collection.d.ts",
+        "tools/tsc/lib.es2015.core.d.ts",
+        "tools/tsc/lib.es2015.d.ts",
+        "tools/tsc/lib.es2015.generator.d.ts",
+        "tools/tsc/lib.es2015.iterable.d.ts",
+        "tools/tsc/lib.es2015.promise.d.ts",
+        "tools/tsc/lib.es2015.proxy.d.ts",
+        "tools/tsc/lib.es2015.reflect.d.ts",
+        "tools/tsc/lib.es2015.symbol.d.ts",
+        "tools/tsc/lib.es2015.symbol.wellknown.d.ts",
+        "tools/tsc/lib.es2016.array.include.d.ts",
+        "tools/tsc/lib.es2016.d.ts",
+        "tools/tsc/lib.es2016.full.d.ts",
+        "tools/tsc/lib.es2017.d.ts",
+        "tools/tsc/lib.es2017.full.d.ts",
+        "tools/tsc/lib.es2017.intl.d.ts",
+        "tools/tsc/lib.es2017.object.d.ts",
+        "tools/tsc/lib.es2017.sharedmemory.d.ts",
+        "tools/tsc/lib.es2017.string.d.ts",
+        "tools/tsc/lib.es2017.typedarrays.d.ts",
+        "tools/tsc/lib.es2018.asyncgenerator.d.ts",
+        "tools/tsc/lib.es2018.asynciterable.d.ts",
+        "tools/tsc/lib.es2018.d.ts",
+        "tools/tsc/lib.es2018.full.d.ts",
+        "tools/tsc/lib.es2018.intl.d.ts",
+        "tools/tsc/lib.es2018.promise.d.ts",
+        "tools/tsc/lib.es2018.regexp.d.ts",
+        "tools/tsc/lib.es2019.array.d.ts",
+        "tools/tsc/lib.es2019.d.ts",
+        "tools/tsc/lib.es2019.full.d.ts",
+        "tools/tsc/lib.es2019.object.d.ts",
+        "tools/tsc/lib.es2019.string.d.ts",
+        "tools/tsc/lib.es2019.symbol.d.ts",
+        "tools/tsc/lib.es2020.bigint.d.ts",
+        "tools/tsc/lib.es2020.d.ts",
+        "tools/tsc/lib.es2020.full.d.ts",
+        "tools/tsc/lib.es2020.intl.d.ts",
+        "tools/tsc/lib.es2020.promise.d.ts",
+        "tools/tsc/lib.es2020.sharedmemory.d.ts",
+        "tools/tsc/lib.es2020.string.d.ts",
+        "tools/tsc/lib.es2020.symbol.wellknown.d.ts",
+        "tools/tsc/lib.es2021.d.ts",
+        "tools/tsc/lib.es2021.full.d.ts",
+        "tools/tsc/lib.es2021.promise.d.ts",
+        "tools/tsc/lib.es2021.string.d.ts",
+        "tools/tsc/lib.es2021.weakref.d.ts",
+        "tools/tsc/lib.es5.d.ts",
+        "tools/tsc/lib.es6.d.ts",
+        "tools/tsc/lib.esnext.array.d.ts",
+        "tools/tsc/lib.esnext.asynciterable.d.ts",
+        "tools/tsc/lib.esnext.bigint.d.ts",
+        "tools/tsc/lib.esnext.d.ts",
+        "tools/tsc/lib.esnext.full.d.ts",
+        "tools/tsc/lib.esnext.intl.d.ts",
+        "tools/tsc/lib.esnext.promise.d.ts",
+        "tools/tsc/lib.esnext.string.d.ts",
+        "tools/tsc/lib.esnext.symbol.d.ts",
+        "tools/tsc/lib.esnext.weakref.d.ts",
+        "tools/tsc/lib.scripthost.d.ts",
+        "tools/tsc/lib.webworker.d.ts",
+        "tools/tsc/lib.webworker.importscripts.d.ts",
+        "tools/tsc/lib.webworker.iterable.d.ts",
+        "tools/tsc/node_modules/@microsoft/typescript-etw/bin/ia32/typescript-etw.node",
+        "tools/tsc/node_modules/@microsoft/typescript-etw/index.js",
+        "tools/tsc/node_modules/@microsoft/typescript-etw/package.json",
+        "tools/tsc/node_modules/source-map-support.js",
+        "tools/tsc/pl/diagnosticMessages.generated.json",
+        "tools/tsc/pt-BR/diagnosticMessages.generated.json",
+        "tools/tsc/ru/diagnosticMessages.generated.json",
+        "tools/tsc/tr/diagnosticMessages.generated.json",
+        "tools/tsc/tsc.js",
+        "tools/tsc/tsserver.js",
+        "tools/tsc/typesMap.json",
+        "tools/tsc/typingsInstaller.js",
+        "tools/tsc/watchGuard.js",
+        "tools/tsc/zh-CN/diagnosticMessages.generated.json",
+        "tools/tsc/zh-TW/diagnosticMessages.generated.json"
       ]
     },
     "Microsoft.Win32.SystemEvents/4.5.0": {
@@ -4364,6 +4481,7 @@
     "net5.0": [
       "MQTTnet.App >= 1.0.0",
       "MQTTnet.AspNetCore >= 3.0.16",
+      "Microsoft.TypeScript.MSBuild >= 4.4.2",
       "Newtonsoft.Json >= 13.0.1"
     ]
   },
@@ -4374,11 +4492,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\MQTTAppWeb.csproj",
+      "projectUniqueName": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\MQTTWebTermClient.csproj",
       "projectName": "MQTTWebTermClient",
-      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\MQTTAppWeb.csproj",
+      "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\MQTTWebTermClient.csproj",
       "packagesPath": "C:\\Users\\synyi\\.nuget\\packages\\",
-      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\obj\\",
+      "outputPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -4399,8 +4517,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj": {
-              "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj"
+            "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj": {
+              "projectPath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj"
             }
           }
         }
@@ -4418,6 +4536,12 @@
           "MQTTnet.AspNetCore": {
             "target": "Package",
             "version": "[3.0.16, )"
+          },
+          "Microsoft.TypeScript.MSBuild": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.4.2, )"
           },
           "Newtonsoft.Json": {
             "target": "Package",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "PkcqQ1uWKegiC9pT0xte7KqiwSCcd7gcjZX9m0r8XCiygRXtRh1wnMwKP6jAr118HIO++XEH4fCAIAQK7hNS5Q==",
+  "dgSpecHash": "KxeF5qMAX1hsQADycwcQnMlcYkJbaN+MI8cwDZ3Hz4E5O+XzMzVHzNeR+gCMEI4H4NQ53jEtGcxS+eDkAwxVQg==",
   "success": true,
-  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTAppWeb\\MQTTAppWeb.csproj",
+  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTAppWeb\\MQTTWebTermClient.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\synyi\\.nuget\\packages\\avalonia\\0.10.6\\avalonia.0.10.6.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",
@@ -28,6 +28,7 @@
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.3.0\\microsoft.csharp.4.3.0.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\microsoft.netcore.platforms\\2.1.2\\microsoft.netcore.platforms.2.1.2.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
+    "C:\\Users\\synyi\\.nuget\\packages\\microsoft.typescript.msbuild\\4.4.2\\microsoft.typescript.msbuild.4.4.2.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\microsoft.win32.systemevents\\4.5.0\\microsoft.win32.systemevents.4.5.0.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\mqttnet\\3.0.16\\mqttnet.3.0.16.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\mqttnet.aspnetcore\\3.0.16\\mqttnet.aspnetcore.3.0.16.nupkg.sha512",

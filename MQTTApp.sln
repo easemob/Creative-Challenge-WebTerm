@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTnet.App", "MQTTnet.App\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTServer", "MQTTServer\MQTTServer.csproj", "{330A98E1-ADE0-4FC5-8608-3DC584203444}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTAppWeb", "MQTTAppWeb\MQTTAppWeb.csproj", "{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MQTTWebTermClient", "MQTTAppWeb\MQTTWebTermClient.csproj", "{A3AFD7B4-1733-4449-A3A9-3C9F43B09B19}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

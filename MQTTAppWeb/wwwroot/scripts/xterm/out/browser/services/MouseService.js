@@ -18,11 +18,11 @@ var MouseService = (function () {
         this._charSizeService = _charSizeService;
     }
     MouseService.prototype.getCoords = function (event, element, colCount, rowCount, isSelection) {
-        return Mouse_1.getCoords(event, element, colCount, rowCount, this._charSizeService.hasValidSize, this._renderService.dimensions.actualCellWidth, this._renderService.dimensions.actualCellHeight, isSelection);
+        return (0, Mouse_1.getCoords)(event, element, colCount, rowCount, this._charSizeService.hasValidSize, this._renderService.dimensions.actualCellWidth, this._renderService.dimensions.actualCellHeight, isSelection);
     };
     MouseService.prototype.getRawByteCoords = function (event, element, colCount, rowCount) {
         var coords = this.getCoords(event, element, colCount, rowCount);
-        return Mouse_1.getRawByteCoords(coords);
+        return (0, Mouse_1.getRawByteCoords)(coords);
     };
     MouseService = __decorate([
         __param(0, Services_1.IRenderService),

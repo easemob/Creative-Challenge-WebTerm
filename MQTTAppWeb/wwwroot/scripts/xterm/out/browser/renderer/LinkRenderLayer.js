@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -59,7 +61,7 @@ var LinkRenderLayer = (function (_super) {
         if (e.fg === Constants_1.INVERTED_DEFAULT_COLOR) {
             this._ctx.fillStyle = this._colors.background.css;
         }
-        else if (e.fg && CharAtlasUtils_1.is256Color(e.fg)) {
+        else if (e.fg && (0, CharAtlasUtils_1.is256Color)(e.fg)) {
             this._ctx.fillStyle = this._colors.ansi[e.fg].css;
         }
         else {

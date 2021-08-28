@@ -259,6 +259,7 @@ D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\bin\Debug\net5.0\runtimes\linux-
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\bin\Debug\net5.0\runtimes\linux-x64\native\libSkiaSharp.so
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\bin\Debug\net5.0\runtimes\unix\lib\netcoreapp2.0\System.Drawing.Common.dll
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\bin\Debug\net5.0\runtimes\win\lib\netcoreapp2.0\System.Drawing.Common.dll
+D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.csproj.AssemblyReference.cache
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.GeneratedMSBuildEditorConfig.editorconfig
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.AssemblyInfoInputs.cache
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.AssemblyInfo.cs
@@ -267,4 +268,3 @@ D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.csp
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.dll
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\ref\MQTTnet.App.dll
 D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.genruntimeconfig.cache
-D:\Source\LearnDemo\MQTTApp\MQTTApp\MQTTnet.App\obj\Debug\net5.0\MQTTnet.App.csproj.AssemblyReference.cache

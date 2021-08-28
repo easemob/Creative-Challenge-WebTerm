@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -227,7 +229,7 @@ var SelectionService = (function (_super) {
         var range = (_b = (_a = this._linkifier.currentLink) === null || _a === void 0 ? void 0 : _a.link) === null || _b === void 0 ? void 0 : _b.range;
         if (range) {
             this._model.selectionStart = [range.start.x - 1, range.start.y - 1];
-            this._model.selectionStartLength = BufferRange_1.getRangeLength(range, this._bufferService.cols);
+            this._model.selectionStartLength = (0, BufferRange_1.getRangeLength)(range, this._bufferService.cols);
             this._model.selectionEnd = undefined;
             return true;
         }
@@ -270,7 +272,7 @@ var SelectionService = (function (_super) {
         return coords;
     };
     SelectionService.prototype._getMouseEventScrollAmount = function (event) {
-        var offset = Mouse_1.getCoordsRelativeToElement(event, this._screenElement)[1];
+        var offset = (0, Mouse_1.getCoordsRelativeToElement)(event, this._screenElement)[1];
         var terminalHeight = this._renderService.dimensions.canvasHeight;
         if (offset >= 0 && offset <= terminalHeight) {
             return 0;
@@ -450,7 +452,7 @@ var SelectionService = (function (_super) {
             if (this._bufferService.buffer.ybase === this._bufferService.buffer.ydisp) {
                 var coordinates = this._mouseService.getCoords(event, this._element, this._bufferService.cols, this._bufferService.rows, false);
                 if (coordinates && coordinates[0] !== undefined && coordinates[1] !== undefined) {
-                    var sequence = MoveToCell_1.moveToCellSequence(coordinates[0] - 1, coordinates[1] - 1, this._bufferService, this._coreService.decPrivateModes.applicationCursorKeys);
+                    var sequence = (0, MoveToCell_1.moveToCellSequence)(coordinates[0] - 1, coordinates[1] - 1, this._bufferService, this._coreService.decPrivateModes.applicationCursorKeys);
                     this._coreService.triggerDataEvent(sequence, true);
                 }
             }

@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -50,7 +52,7 @@ var Viewport = (function (_super) {
         _this._refreshAnimationFrame = null;
         _this._ignoreNextScrollEvent = false;
         _this.scrollBarWidth = (_this._viewportElement.offsetWidth - _this._scrollArea.offsetWidth) || FALLBACK_SCROLL_BAR_WIDTH;
-        _this.register(Lifecycle_2.addDisposableDomListener(_this._viewportElement, 'scroll', _this._onScroll.bind(_this)));
+        _this.register((0, Lifecycle_2.addDisposableDomListener)(_this._viewportElement, 'scroll', _this._onScroll.bind(_this)));
         setTimeout(function () { return _this.syncScrollArea(); }, 0);
         return _this;
     }

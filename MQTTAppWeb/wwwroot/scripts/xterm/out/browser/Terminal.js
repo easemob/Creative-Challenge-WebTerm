@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -68,10 +70,10 @@ var Terminal = (function (_super) {
         _this.register(_this._inputHandler.onRequestReset(function () { return _this.reset(); }));
         _this.register(_this._inputHandler.onRequestWindowsOptionsReport(function (type) { return _this._reportWindowsOptions(type); }));
         _this.register(_this._inputHandler.onAnsiColorChange(function (event) { return _this._changeAnsiColor(event); }));
-        _this.register(EventEmitter_1.forwardEvent(_this._inputHandler.onCursorMove, _this._onCursorMove));
-        _this.register(EventEmitter_1.forwardEvent(_this._inputHandler.onTitleChange, _this._onTitleChange));
-        _this.register(EventEmitter_1.forwardEvent(_this._inputHandler.onA11yChar, _this._onA11yCharEmitter));
-        _this.register(EventEmitter_1.forwardEvent(_this._inputHandler.onA11yTab, _this._onA11yTabEmitter));
+        _this.register((0, EventEmitter_1.forwardEvent)(_this._inputHandler.onCursorMove, _this._onCursorMove));
+        _this.register((0, EventEmitter_1.forwardEvent)(_this._inputHandler.onTitleChange, _this._onTitleChange));
+        _this.register((0, EventEmitter_1.forwardEvent)(_this._inputHandler.onA11yChar, _this._onA11yCharEmitter));
+        _this.register((0, EventEmitter_1.forwardEvent)(_this._inputHandler.onA11yTab, _this._onA11yTabEmitter));
         _this.register(_this._bufferService.onResize(function (e) { return _this._afterResize(e.cols, e.rows); }));
         return _this;
     }
@@ -270,43 +272,43 @@ var Terminal = (function (_super) {
     Terminal.prototype._initGlobal = function () {
         var _this = this;
         this._bindKeys();
-        this.register(Lifecycle_1.addDisposableDomListener(this.element, 'copy', function (event) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'copy', function (event) {
             if (!_this.hasSelection()) {
                 return;
             }
-            Clipboard_1.copyHandler(event, _this._selectionService);
+            (0, Clipboard_1.copyHandler)(event, _this._selectionService);
         }));
-        var pasteHandlerWrapper = function (event) { return Clipboard_1.handlePasteEvent(event, _this.textarea, _this._coreService); };
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'paste', pasteHandlerWrapper));
-        this.register(Lifecycle_1.addDisposableDomListener(this.element, 'paste', pasteHandlerWrapper));
+        var pasteHandlerWrapper = function (event) { return (0, Clipboard_1.handlePasteEvent)(event, _this.textarea, _this._coreService); };
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'paste', pasteHandlerWrapper));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'paste', pasteHandlerWrapper));
         if (Browser.isFirefox) {
-            this.register(Lifecycle_1.addDisposableDomListener(this.element, 'mousedown', function (event) {
+            this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'mousedown', function (event) {
                 if (event.button === 2) {
-                    Clipboard_1.rightClickHandler(event, _this.textarea, _this.screenElement, _this._selectionService, _this.options.rightClickSelectsWord);
+                    (0, Clipboard_1.rightClickHandler)(event, _this.textarea, _this.screenElement, _this._selectionService, _this.options.rightClickSelectsWord);
                 }
             }));
         }
         else {
-            this.register(Lifecycle_1.addDisposableDomListener(this.element, 'contextmenu', function (event) {
-                Clipboard_1.rightClickHandler(event, _this.textarea, _this.screenElement, _this._selectionService, _this.options.rightClickSelectsWord);
+            this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'contextmenu', function (event) {
+                (0, Clipboard_1.rightClickHandler)(event, _this.textarea, _this.screenElement, _this._selectionService, _this.options.rightClickSelectsWord);
             }));
         }
         if (Browser.isLinux) {
-            this.register(Lifecycle_1.addDisposableDomListener(this.element, 'auxclick', function (event) {
+            this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'auxclick', function (event) {
                 if (event.button === 1) {
-                    Clipboard_1.moveTextAreaUnderMouseCursor(event, _this.textarea, _this.screenElement);
+                    (0, Clipboard_1.moveTextAreaUnderMouseCursor)(event, _this.textarea, _this.screenElement);
                 }
             }));
         }
     };
     Terminal.prototype._bindKeys = function () {
         var _this = this;
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'keyup', function (ev) { return _this._keyUp(ev); }, true));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'keydown', function (ev) { return _this._keyDown(ev); }, true));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'keypress', function (ev) { return _this._keyPress(ev); }, true));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'compositionstart', function () { return _this._compositionHelper.compositionstart(); }));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'compositionupdate', function (e) { return _this._compositionHelper.compositionupdate(e); }));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'compositionend', function () { return _this._compositionHelper.compositionend(); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'keyup', function (ev) { return _this._keyUp(ev); }, true));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'keydown', function (ev) { return _this._keyDown(ev); }, true));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'keypress', function (ev) { return _this._keyPress(ev); }, true));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'compositionstart', function () { return _this._compositionHelper.compositionstart(); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'compositionupdate', function (e) { return _this._compositionHelper.compositionupdate(e); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'compositionend', function () { return _this._compositionHelper.compositionend(); }));
         this.register(this.onRender(function () { return _this._compositionHelper.updateCompositionElements(); }));
         this.register(this.onRender(function (e) { return _this._queueLinkification(e.start, e.end); }));
     };
@@ -347,8 +349,8 @@ var Terminal = (function (_super) {
         this.textarea.setAttribute('autocapitalize', 'off');
         this.textarea.setAttribute('spellcheck', 'false');
         this.textarea.tabIndex = 0;
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'focus', function (ev) { return _this._onTextAreaFocus(ev); }));
-        this.register(Lifecycle_1.addDisposableDomListener(this.textarea, 'blur', function () { return _this._onTextAreaBlur(); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'focus', function (ev) { return _this._onTextAreaFocus(ev); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.textarea, 'blur', function () { return _this._onTextAreaBlur(); }));
         this._helperContainer.appendChild(this.textarea);
         var coreBrowserService = this._instantiationService.createInstance(CoreBrowserService_1.CoreBrowserService, this.textarea);
         this._instantiationService.setService(Services_1.ICoreBrowserService, coreBrowserService);
@@ -400,13 +402,13 @@ var Terminal = (function (_super) {
             _this.viewport.syncScrollArea();
             _this._selectionService.refresh();
         }));
-        this.register(Lifecycle_1.addDisposableDomListener(this._viewportElement, 'scroll', function () { return _this._selectionService.refresh(); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this._viewportElement, 'scroll', function () { return _this._selectionService.refresh(); }));
         this._mouseZoneManager = this._instantiationService.createInstance(MouseZoneManager_1.MouseZoneManager, this.element, this.screenElement);
         this.register(this._mouseZoneManager);
         this.register(this.onScroll(function () { return _this._mouseZoneManager.clearAll(); }));
         this.linkifier.attachToDom(this.element, this._mouseZoneManager);
         this.linkifier2.attachToDom(this.element, this._mouseService, this._renderService);
-        this.register(Lifecycle_1.addDisposableDomListener(this.element, 'mousedown', function (e) { return _this._selectionService.onMouseDown(e); }));
+        this.register((0, Lifecycle_1.addDisposableDomListener)(this.element, 'mousedown', function (e) { return _this._selectionService.onMouseDown(e); }));
         if (this._coreMouseService.areMouseEventsActive) {
             this._selectionService.disable();
             this.element.classList.add('enable-mouse-events');
@@ -571,7 +573,7 @@ var Terminal = (function (_super) {
             }
         }));
         this._coreMouseService.activeProtocol = this._coreMouseService.activeProtocol;
-        this.register(Lifecycle_1.addDisposableDomListener(el, 'mousedown', function (ev) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(el, 'mousedown', function (ev) {
             ev.preventDefault();
             _this.focus();
             if (!_this._coreMouseService.areMouseEventsActive || _this._selectionService.shouldForceSelection(ev)) {
@@ -586,7 +588,7 @@ var Terminal = (function (_super) {
             }
             return _this.cancel(ev);
         }));
-        this.register(Lifecycle_1.addDisposableDomListener(el, 'wheel', function (ev) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(el, 'wheel', function (ev) {
             if (!requestedEvents.wheel) {
                 if (!_this.buffer.hasScrollback) {
                     var amount = _this.viewport.getLinesScrolled(ev);
@@ -603,20 +605,20 @@ var Terminal = (function (_super) {
                 return;
             }
         }, { passive: true }));
-        this.register(Lifecycle_1.addDisposableDomListener(el, 'wheel', function (ev) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(el, 'wheel', function (ev) {
             if (requestedEvents.wheel)
                 return;
             if (!_this.viewport.onWheel(ev)) {
                 return _this.cancel(ev);
             }
         }, { passive: false }));
-        this.register(Lifecycle_1.addDisposableDomListener(el, 'touchstart', function (ev) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(el, 'touchstart', function (ev) {
             if (_this._coreMouseService.areMouseEventsActive)
                 return;
             _this.viewport.onTouchStart(ev);
             return _this.cancel(ev);
         }, { passive: true }));
-        this.register(Lifecycle_1.addDisposableDomListener(el, 'touchmove', function (ev) {
+        this.register((0, Lifecycle_1.addDisposableDomListener)(el, 'touchmove', function (ev) {
             if (_this._coreMouseService.areMouseEventsActive)
                 return;
             if (!_this.viewport.onTouchMove(ev)) {
@@ -653,7 +655,7 @@ var Terminal = (function (_super) {
         this.refresh(0, this.rows - 1);
     };
     Terminal.prototype.paste = function (data) {
-        Clipboard_1.paste(data, this.textarea, this._coreService);
+        (0, Clipboard_1.paste)(data, this.textarea, this._coreService);
     };
     Terminal.prototype.attachCustomKeyEventHandler = function (customKeyEventHandler) {
         this._customKeyEventHandler = customKeyEventHandler;
@@ -743,7 +745,7 @@ var Terminal = (function (_super) {
             }
             return false;
         }
-        var result = Keyboard_1.evaluateKeyboardEvent(event, this._coreService.decPrivateModes.applicationCursorKeys, this.browser.isMac, this.options.macOptionIsMeta);
+        var result = (0, Keyboard_1.evaluateKeyboardEvent)(event, this._coreService.decPrivateModes.applicationCursorKeys, this.browser.isMac, this.options.macOptionIsMeta);
         this.updateCursorStyle(event);
         if (result.type === 3 || result.type === 2) {
             var scrollCount = this.rows - 1;

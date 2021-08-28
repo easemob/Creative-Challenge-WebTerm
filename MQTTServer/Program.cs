@@ -27,16 +27,16 @@ namespace MQTTConsole
             //MQTT 配置
             var ClientId = "ct3@v0atj0";
             var Password =
-                "";
+                "YWMtGGTjOgS5Eey7-lEGqIvevNNFtaTuGkJZrtTnGbPw-gKNLDFwAYMR7K4hbQAtUIybAwMAAAF7d1-P3ABPGgDbc5RJBfjWc3ES0Zw-W60gwLFKLCIAnPAU9RXgRp1zoA";
             var Host = "v0atj0.cn1.mqtt.chat";
             var Port = "1883";
             var User = "user1";
-            var PublishTopic = "top1";
-            var SubscribeTopic = "top2";
+            var PublishTopic = "top2";
+            var SubscribeTopic = "top1";
 
             //SSH 配置
             var SSHHost= "";
-            var SSHUser = "";
+            var SSHUser = "root";
             var SSHPassword = "";
 
 

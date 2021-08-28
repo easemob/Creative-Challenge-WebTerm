@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -45,11 +47,11 @@ var DynamicCharAtlas = (function (_super) {
         _this._cacheCanvas = document.createElement('canvas');
         _this._cacheCanvas.width = TEXTURE_WIDTH;
         _this._cacheCanvas.height = TEXTURE_HEIGHT;
-        _this._cacheCtx = RendererUtils_1.throwIfFalsy(_this._cacheCanvas.getContext('2d', { alpha: true }));
+        _this._cacheCtx = (0, RendererUtils_1.throwIfFalsy)(_this._cacheCanvas.getContext('2d', { alpha: true }));
         var tmpCanvas = document.createElement('canvas');
         tmpCanvas.width = _this._config.scaledCharWidth;
         tmpCanvas.height = _this._config.scaledCharHeight;
-        _this._tmpCtx = RendererUtils_1.throwIfFalsy(tmpCanvas.getContext('2d', { alpha: _this._config.allowTransparency }));
+        _this._tmpCtx = (0, RendererUtils_1.throwIfFalsy)(tmpCanvas.getContext('2d', { alpha: _this._config.allowTransparency }));
         _this._width = Math.floor(TEXTURE_WIDTH / _this._config.scaledCharWidth);
         _this._height = Math.floor(TEXTURE_HEIGHT / _this._config.scaledCharHeight);
         var capacity = _this._width * _this._height;

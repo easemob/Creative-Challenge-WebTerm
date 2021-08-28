@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -81,7 +83,7 @@ var Renderer = (function (_super) {
             l.dispose();
         }
         _super.prototype.dispose.call(this);
-        CharAtlasCache_1.removeTerminalFromCache(this._id);
+        (0, CharAtlasCache_1.removeTerminalFromCache)(this._id);
     };
     Renderer.prototype.onDevicePixelRatioChange = function () {
         if (this._devicePixelRatio !== window.devicePixelRatio) {

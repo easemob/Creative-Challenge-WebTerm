@@ -5,12 +5,12 @@ var CharAtlasUtils_1 = require("browser/renderer/atlas/CharAtlasUtils");
 var DynamicCharAtlas_1 = require("browser/renderer/atlas/DynamicCharAtlas");
 var charAtlasCache = [];
 function acquireCharAtlas(options, rendererId, colors, scaledCharWidth, scaledCharHeight) {
-    var newConfig = CharAtlasUtils_1.generateConfig(scaledCharWidth, scaledCharHeight, options, colors);
+    var newConfig = (0, CharAtlasUtils_1.generateConfig)(scaledCharWidth, scaledCharHeight, options, colors);
     for (var i = 0; i < charAtlasCache.length; i++) {
         var entry = charAtlasCache[i];
         var ownedByIndex = entry.ownedBy.indexOf(rendererId);
         if (ownedByIndex >= 0) {
-            if (CharAtlasUtils_1.configEquals(entry.config, newConfig)) {
+            if ((0, CharAtlasUtils_1.configEquals)(entry.config, newConfig)) {
                 return entry.atlas;
             }
             if (entry.ownedBy.length === 1) {
@@ -25,7 +25,7 @@ function acquireCharAtlas(options, rendererId, colors, scaledCharWidth, scaledCh
     }
     for (var i = 0; i < charAtlasCache.length; i++) {
         var entry = charAtlasCache[i];
-        if (CharAtlasUtils_1.configEquals(entry.config, newConfig)) {
+        if ((0, CharAtlasUtils_1.configEquals)(entry.config, newConfig)) {
             entry.ownedBy.push(rendererId);
             return entry.atlas;
         }

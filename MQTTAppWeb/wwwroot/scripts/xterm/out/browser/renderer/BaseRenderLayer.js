@@ -39,11 +39,11 @@ var BaseRenderLayer = (function () {
     }
     BaseRenderLayer.prototype.dispose = function () {
         var _a;
-        Dom_1.removeElementFromParent(this._canvas);
+        (0, Dom_1.removeElementFromParent)(this._canvas);
         (_a = this._charAtlas) === null || _a === void 0 ? void 0 : _a.dispose();
     };
     BaseRenderLayer.prototype._initCanvas = function () {
-        this._ctx = RendererUtils_1.throwIfFalsy(this._canvas.getContext('2d', { alpha: this._alpha }));
+        this._ctx = (0, RendererUtils_1.throwIfFalsy)(this._canvas.getContext('2d', { alpha: this._alpha }));
         if (!this._alpha) {
             this._clearAll();
         }
@@ -75,7 +75,7 @@ var BaseRenderLayer = (function () {
         if (this._scaledCharWidth <= 0 && this._scaledCharHeight <= 0) {
             return;
         }
-        this._charAtlas = CharAtlasCache_1.acquireCharAtlas(this._optionsService.options, this._rendererId, colorSet, this._scaledCharWidth, this._scaledCharHeight);
+        this._charAtlas = (0, CharAtlasCache_1.acquireCharAtlas)(this._optionsService.options, this._rendererId, colorSet, this._scaledCharWidth, this._scaledCharHeight);
         this._charAtlas.warmUp();
     };
     BaseRenderLayer.prototype.resize = function (dim) {

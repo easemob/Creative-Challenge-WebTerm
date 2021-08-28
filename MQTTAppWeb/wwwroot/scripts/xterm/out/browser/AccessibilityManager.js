@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -70,12 +72,12 @@ var AccessibilityManager = (function (_super) {
         _this._screenDprMonitor = new ScreenDprMonitor_1.ScreenDprMonitor();
         _this.register(_this._screenDprMonitor);
         _this._screenDprMonitor.setListener(function () { return _this._refreshRowsDimensions(); });
-        _this.register(Lifecycle_1.addDisposableDomListener(window, 'resize', function () { return _this._refreshRowsDimensions(); }));
+        _this.register((0, Lifecycle_1.addDisposableDomListener)(window, 'resize', function () { return _this._refreshRowsDimensions(); }));
         return _this;
     }
     AccessibilityManager.prototype.dispose = function () {
         _super.prototype.dispose.call(this);
-        Dom_1.removeElementFromParent(this._accessibilityTreeRoot);
+        (0, Dom_1.removeElementFromParent)(this._accessibilityTreeRoot);
         this._rowElements.length = 0;
     };
     AccessibilityManager.prototype._onBoundaryFocus = function (e, position) {
@@ -175,7 +177,7 @@ var AccessibilityManager = (function (_super) {
         this._liveRegion.textContent = '';
         this._liveRegionLineCount = 0;
         if (Platform_1.isMac) {
-            Dom_1.removeElementFromParent(this._liveRegion);
+            (0, Dom_1.removeElementFromParent)(this._liveRegion);
         }
     };
     AccessibilityManager.prototype._onKey = function (keyChar) {

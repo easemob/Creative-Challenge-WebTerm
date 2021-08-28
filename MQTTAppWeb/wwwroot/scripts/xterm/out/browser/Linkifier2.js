@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -38,7 +40,7 @@ var Linkifier2 = (function (_super) {
         _this._activeLine = -1;
         _this._onShowLinkUnderline = _this.register(new EventEmitter_1.EventEmitter());
         _this._onHideLinkUnderline = _this.register(new EventEmitter_1.EventEmitter());
-        _this.register(Lifecycle_1.getDisposeArrayDisposable(_this._linkCacheDisposables));
+        _this.register((0, Lifecycle_1.getDisposeArrayDisposable)(_this._linkCacheDisposables));
         return _this;
     }
     Object.defineProperty(Linkifier2.prototype, "currentLink", {
@@ -73,12 +75,12 @@ var Linkifier2 = (function (_super) {
         this._element = element;
         this._mouseService = mouseService;
         this._renderService = renderService;
-        this.register(Lifecycle_2.addDisposableDomListener(this._element, 'mouseleave', function () {
+        this.register((0, Lifecycle_2.addDisposableDomListener)(this._element, 'mouseleave', function () {
             _this._isMouseOut = true;
             _this._clearCurrentLink();
         }));
-        this.register(Lifecycle_2.addDisposableDomListener(this._element, 'mousemove', this._onMouseMove.bind(this)));
-        this.register(Lifecycle_2.addDisposableDomListener(this._element, 'click', this._onClick.bind(this)));
+        this.register((0, Lifecycle_2.addDisposableDomListener)(this._element, 'mousemove', this._onMouseMove.bind(this)));
+        this.register((0, Lifecycle_2.addDisposableDomListener)(this._element, 'click', this._onClick.bind(this)));
     };
     Linkifier2.prototype._onMouseMove = function (event) {
         this._lastMouseEvent = event;
@@ -228,7 +230,7 @@ var Linkifier2 = (function (_super) {
         if (!startRow || !endRow || (this._currentLink.link.range.start.y >= startRow && this._currentLink.link.range.end.y <= endRow)) {
             this._linkLeave(this._element, this._currentLink.link, this._lastMouseEvent);
             this._currentLink = undefined;
-            Lifecycle_1.disposeArray(this._linkCacheDisposables);
+            (0, Lifecycle_1.disposeArray)(this._linkCacheDisposables);
         }
     };
     Linkifier2.prototype._handleNewLink = function (linkWithState) {

@@ -7,6 +7,8 @@ var __extends = (this && this.__extends) || (function () {
         return extendStatics(d, b);
     };
     return function (d, b) {
+        if (typeof b !== "function" && b !== null)
+            throw new TypeError("Class extends value " + String(b) + " is not a constructor or null");
         extendStatics(d, b);
         function __() { this.constructor = d; }
         d.prototype = b === null ? Object.create(b) : (__.prototype = b.prototype, new __());
@@ -41,7 +43,7 @@ var MouseZoneManager = (function (_super) {
         _this._areZonesActive = false;
         _this._lastHoverCoords = [undefined, undefined];
         _this._initialSelectionLength = 0;
-        _this.register(Lifecycle_2.addDisposableDomListener(_this._element, 'mousedown', function (e) { return _this._onMouseDown(e); }));
+        _this.register((0, Lifecycle_2.addDisposableDomListener)(_this._element, 'mousedown', function (e) { return _this._onMouseDown(e); }));
         _this._mouseMoveListener = function (e) { return _this._onMouseMove(e); };
         _this._mouseLeaveListener = function (e) { return _this._onMouseLeave(e); };
         _this._clickListener = function (e) { return _this._onClick(e); };

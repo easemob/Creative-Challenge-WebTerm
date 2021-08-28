@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ez7Iy213UJ88cE2SY+BOT0MfH34WIdDKJMLNg9cMJRQQ+e5Baiuhdueoz/kHx+LVAprFEXZIkObyBQoCLYUWxg==",
+  "dgSpecHash": "dZARYLFNuFCiSS5VIPiMPO91gHm+eSr4hUFOmSinG1eeuNy6N9jPdJj25i2P4RVw191NejWPGSDVo/fHbfyR+A==",
   "success": true,
-  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTServer\\MQTTServer.csproj",
+  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTServer\\MQTTServer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\synyi\\.nuget\\packages\\mqttnet\\3.0.16\\mqttnet.3.0.16.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\ssh.net\\2020.0.1\\ssh.net.2020.0.1.nupkg.sha512",

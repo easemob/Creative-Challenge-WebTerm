@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Net.WebSockets;
 using System.Text;
 using System.Text.Unicode;
 using System.Threading.Tasks;
@@ -38,16 +39,17 @@ namespace MQTTAppWeb
     public sealed class SubscriptionsCmdResultMessage : BasePageViewModel, IMqttApplicationMessageReceivedHandler
     {
         readonly MqttClientService _mqttClientService;
-
+        readonly WebsocketClient _webSocketClient;
+      
         int _messageId;
 
 
-        public SubscriptionsCmdResultMessage(MqttClientService mqttClientService)
+        public SubscriptionsCmdResultMessage(MqttClientService mqttClientService, WebsocketClient webSocketClient)
         {
             _mqttClientService = mqttClientService ?? throw new ArgumentNullException(nameof(mqttClientService));
 
             mqttClientService.RegisterApplicationMessageReceivedHandler(this);
-
+            _webSocketClient = webSocketClient;
             Header = "Subscriptions";
         }
 
@@ -59,7 +61,7 @@ namespace MQTTAppWeb
         {
             Console.WriteLine($"receive topic 2 {Encoding.UTF8.GetString(eventArgs.ApplicationMessage.Payload)}");
 
-
+            _webSocketClient.SendMessageAsync($"收到命令回复：{Encoding.UTF8.GetString(eventArgs.ApplicationMessage.Payload)}");
             return Dispatcher.UIThread.InvokeAsync(() =>
             {
                 Console.WriteLine($"receive topic 2 {eventArgs.ApplicationMessage}");

@@ -50,7 +50,7 @@ namespace MQTTAppWeb
                     {
                         if (!_mqttClientService.IsConnected)
                         {
-                            var subscriptionsCmdResultMessage = new SubscriptionsCmdResultMessage(_mqttClientService);
+                            var subscriptionsCmdResultMessage = new SubscriptionsCmdResultMessage(_mqttClientService, wsClient);
                             _mqttClientService.RegisterApplicationMessageReceivedHandler(subscriptionsCmdResultMessage);
 
                             await _mqttClientService.Connect(new ConnectionPageViewModel(_mqttClientService)

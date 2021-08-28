@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "db3mNDGMaKcOc90/3t16/11LwsXqX8oaRq011VqTMzkTNvgFlxWENhpI7U4N8tiYPpeG0qdEcGHub/qlv3lapg==",
+  "dgSpecHash": "7DNmybODXNj+nf66TxkifK5MeoufY5M0o6gH6BbTLgjso+c3RqbZhSJvSrmaw6cBHH7wwnCMvVmYoulf5OSNjQ==",
   "success": true,
-  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTGithub\\MQTTnet.App\\MQTTnet.App.csproj",
+  "projectFilePath": "D:\\Source\\LearnDemo\\MQTTApp\\MQTTApp\\MQTTnet.App\\MQTTnet.App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\synyi\\.nuget\\packages\\avalonia\\0.10.6\\avalonia.0.10.6.nupkg.sha512",
     "C:\\Users\\synyi\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2020091801\\avalonia.angle.windows.natives.2.1.0.2020091801.nupkg.sha512",
