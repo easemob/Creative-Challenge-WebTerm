@@ -35,7 +35,7 @@
  ![cmd_server](resources/cmd_server.png)
  
  ##### 如输入linux命令 ls 查看服务器目录
- ![mqtt-server-top1](resources/cmd-con.png)
+ ![cmd-con](resources/cmd-con.png)
  
  
  ##### 引用
