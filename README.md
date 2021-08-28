@@ -11,14 +11,19 @@
 ###### 使用说明：
 ![615d4334b6ef7d1d5613b7ee05e24620](resources/D3973F7D-C5B6-488E-8DA3-750CF80C842C.png)
 
+##### MQTTAppWeb
 - web-terminal:
- web输入命令端
+ web输入命令端，需配置websocket连接。
 - MQTT-Client:
- Web客户端后台，监听发布订阅消息，编码命令并推送组装的内容。
+ Web客户端后台，监听发布订阅消息，编码命令并推送组装的内容。需要在appsettings.Development.json 配置MQTT连接配置。
 - MQTT-Center:
  MQTT 中介端，如：环信
+##### MQTTServer
 - MQTT-Server:
- MQTT 服务端，接受包含命令的消息，解析命令，SSH方式连接服务器并执行命令。执行完毕发送通知。
+ MQTT 服务端，接受包含命令的消息，解析命令，SSH方式连接服务器并执行命令。执行完毕发送通知。需配置MQTT连接配置和SSH连接。
+##### MQTTnet.App
+- Common:
+ 公共组件，负责MQTT连接调试，也可以作为桌面端命令发送客服端
  
 ###### web端输入命令
  ![cmd1](resources/cmd1.png)
@@ -30,7 +35,5 @@
  ![cmd_server](resources/cmd_server.png)
  
  ##### 引用
- [xterm.js](https://github.com/xtermjs/xterm.js)
- [MQTTnet](https://github.com/chkr1011/MQTTnet)
- 
+   [xterm.js](https://github.com/xtermjs/xterm.js)
 
